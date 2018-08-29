@@ -1,5 +1,41 @@
 # Content Accessibility ("Universell utforming")
 
+## Useful URLs
+
+* General:
+    * http://uu.difi.no/
+* 35 of 61 success criteria in the standard (WCAG) 2.0: 
+    * https://uu.difi.no/krav-og-regelverk/wcag-20-standarden
+* Accessible Forms: 
+    * http://webaim.org/techniques/forms
+    * http://universaldesign.ie/Technology-ICT/Web-accessibility-techniques/Designer-s-introduction-and-index/Forms-Section-5-of-6-/DES-5-1-Simplify-form-design-use-good-spacing-sensible-grouping-and-labels-for-every-element.html
+* How to handle hiding of content:
+    * http://alistapart.com/article/now-you-see-me
+* Hover-styling: 
+    * http://www.456bereastreet.com/archive/201004/whenever_you_use_hover_also_use_focus/
+* Design patterns for keyboard-navigation and most components on any website: 
+    * https://www.w3.org/TR/wai-aria-practices/#aria_ex
+* Practical (implementation-)details one should think about when designing a accessible website:
+    * https://medium.com/@addyosmani/accessible-ui-components-for-the-web-39e727101a67
+
+## Tools
+
+* Accesibility Developer Tool - Chrome Plugin for å teste nettsiden: 
+    * https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb
+* Colour Contrast Analyser: 
+    * https://www.paciellogroup.com/resources/contrastanalyser/
+* Ally:
+    * https://allyjs.io/
+* Tota11y:
+    * https://github.com/Khan/tota11y
+* Tota11y chrome extension:
+    * https://chrome.google.com/webstore/detail/tota11y-plugin-from-khan/oedofneiplgibimfkccchnimiadcmhpe
+* ChromeLens:
+    * http://chromelens.xyz/
+* CanIUse - Browser support tables:
+    * http://caniuse.com/#home
+
+
 ## Standards
 ### W3C 
 www.w3.org (HTML, Xml, Css)
