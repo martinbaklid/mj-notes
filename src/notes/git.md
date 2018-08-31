@@ -42,8 +42,38 @@ Running `git commit` will open the default editor of Git.
 
 #### Best practise for commit messages
 
-Remember the 'best practises' presented earlier. Try to create a good
-and meaningful commit message. Save and close the editor.
+* Imperative form
+* Wrap the lines to about 72 characters
+* Type of commit:
+  * feat : A new feature
+  * fix : A bug fix
+  * docs : Documentation only changes
+  * style : Changes that do not affect the meaning of the code
+    (white-space,formatting, missing semi-colons, etc)
+  * refactor : A code change that neither fixes a bug nor adds a feature
+  * perf : A code change that improves performance
+  * test : Adding missing tests
+  * chore : Changes to the build process or auxiliary tools and
+    libraries such as documentation generation
+* Structure:
+
+  ```
+    <type of commit>: Short (50 chars or less) summary of changes
+    
+    More detailed explanatory text, if necessary. Wrap it to
+    about 72 characters or so. In some contexts, the first
+    line is treated as the subject of an email and the rest of
+    the text as the body. The blank line separating the
+    summary from the body is critical (unless you omit the body
+    entirely); tools like rebase can get confused if you run
+    the two together.
+    
+    Further paragraphs come after blank lines.
+    - Bullet points are okay, too
+    - Typically a hyphen or asterisk is used for the bullet, preceded 
+      by a single space, with blank lines in between, but conventions 
+      vary here
+  ```
 
 #### Change default editor
 
