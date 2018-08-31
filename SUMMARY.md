@@ -18,3 +18,4 @@
     * [Update the remote repository](src/notes/git.md#update-the-remote-repository)
     * [Branching](src/notes/git.md#branching)
     * [Amending to the last commit](src/notes/git.md#amending-to-the-last-commit)
+* [Hiking | Check list](src/notes/hiking-check-list.md)
