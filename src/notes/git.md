@@ -14,6 +14,12 @@ Check the status of the current state.
 * Fetch: `git fetch`
 * Pull: `git pull`
 
+### Stashing changes
+
+* Stash changes to stack: `git stash`
+* Pop changes from stack: `git stash pop`
+* Stash bulkes to stack: `git stash –p`
+
 ### Staging
 
 Changed files are marked as `modified`, but the file is not in the
