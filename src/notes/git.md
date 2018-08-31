@@ -1,5 +1,17 @@
 # GIT
 
+* [Actions](#actions)
+  * [Status](#status)
+  * [Update local repo](#update-local-repo)
+  * [Stashing changes](#stashing-changes)
+  * [Staging](#staging)
+  * [Commits](#commits)
+    * [Best practise for commit messages](#best-practise-for-commit-messages)
+    * [Change default editor](#change-default-editor)
+  * [Update the remote repository](#update-the-remote-repository)
+  * [Branching](#branching)
+  * [Amending to the last commit](#amending-to-the-last-commit)
+
 ## Actions
 
 ### Status

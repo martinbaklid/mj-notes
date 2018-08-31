@@ -1,55 +1,66 @@
 # Content Accessibility ("Universell utforming")
 
+* [Useful URLs](content-accessibility.md#useful-urls)
+* [Tools](content-accessibility.md#tools)
+* [Standards](content-accessibility.md#standards)
+* [Technical requirements](content-accessibility.md#technical-requirements)
+
 ## Useful URLs
 
 * General:
-    * http://uu.difi.no/
-* 35 of 61 success criteria in the standard (WCAG) 2.0: 
-    * https://uu.difi.no/krav-og-regelverk/wcag-20-standarden
-* Accessible Forms: 
-    * http://webaim.org/techniques/forms
-    * http://universaldesign.ie/Technology-ICT/Web-accessibility-techniques/Designer-s-introduction-and-index/Forms-Section-5-of-6-/DES-5-1-Simplify-form-design-use-good-spacing-sensible-grouping-and-labels-for-every-element.html
+  * http://uu.difi.no/
+* 35 of 61 success criteria in the standard (WCAG) 2.0:
+  * https://uu.difi.no/krav-og-regelverk/wcag-20-standarden
+* Accessible Forms:
+  * http://webaim.org/techniques/forms
+  * http://universaldesign.ie/Technology-ICT/Web-accessibility-techniques/Designer-s-introduction-and-index/Forms-Section-5-of-6-/DES-5-1-Simplify-form-design-use-good-spacing-sensible-grouping-and-labels-for-every-element.html
 * How to handle hiding of content:
-    * http://alistapart.com/article/now-you-see-me
-* Hover-styling: 
-    * http://www.456bereastreet.com/archive/201004/whenever_you_use_hover_also_use_focus/
-* Design patterns for keyboard-navigation and most components on any website: 
-    * https://www.w3.org/TR/wai-aria-practices/#aria_ex
-* Practical (implementation-)details one should think about when designing a accessible website:
-    * https://medium.com/@addyosmani/accessible-ui-components-for-the-web-39e727101a67
+  * http://alistapart.com/article/now-you-see-me
+* Hover-styling:
+  * http://www.456bereastreet.com/archive/201004/whenever_you_use_hover_also_use_focus/
+* Design patterns for keyboard-navigation and most components on any
+  website:
+  * https://www.w3.org/TR/wai-aria-practices/#aria_ex
+* Practical (implementation-)details one should think about when
+  designing a accessible website:
+  * https://medium.com/@addyosmani/accessible-ui-components-for-the-web-39e727101a67
 
 ## Tools
 
-* Accesibility Developer Tool - Chrome Plugin for å teste nettsiden: 
-    * https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb
-* Colour Contrast Analyser: 
-    * https://www.paciellogroup.com/resources/contrastanalyser/
+* Accesibility Developer Tool - Chrome Plugin for å teste nettsiden:
+  * https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb
+* Colour Contrast Analyser:
+  * https://www.paciellogroup.com/resources/contrastanalyser/
 * Ally:
-    * https://allyjs.io/
+  * https://allyjs.io/
 * Tota11y:
-    * https://github.com/Khan/tota11y
+  * https://github.com/Khan/tota11y
 * Tota11y chrome extension:
-    * https://chrome.google.com/webstore/detail/tota11y-plugin-from-khan/oedofneiplgibimfkccchnimiadcmhpe
+  * https://chrome.google.com/webstore/detail/tota11y-plugin-from-khan/oedofneiplgibimfkccchnimiadcmhpe
 * ChromeLens:
-    * http://chromelens.xyz/
+  * http://chromelens.xyz/
 * CanIUse - Browser support tables:
-    * http://caniuse.com/#home
+  * http://caniuse.com/#home
 
 
 ## Standards
-### W3C 
+
+### W3C
+
 www.w3.org (HTML, Xml, Css)
 
 ### WAI
+
 www.w3.org/wai (ATAG)
 
-### WCAG (Web Content Accessibility Guidelines) 
-www.w3.org/WAI/intro/wcag.php 
+### WCAG (Web Content Accessibility Guidelines)
+
+www.w3.org/WAI/intro/wcag.php
 
 05.06.18 -> version 2.1
 
 Levels:
-- A 
+- A
 - AA
 - AAA
 
@@ -58,24 +69,29 @@ Erupopean standards (EU):
 - WCAG 2.1: HEN 301 549
 
 ## Technical requirements
-Always complement icons with a text (e.g. hamburger icon with text "Menu")
 
-Illustrations is important to complement text (e.g. description of parking). Many people have problems understanding what they read.
+Always complement icons with a text (e.g. hamburger icon with text
+"Menu")
+
+Illustrations is important to complement text (e.g. description of
+parking). Many people have problems understanding what they read.
 
 ### Screen readers
-Examples: 
+
+Examples:
 - Jaws (free for developers)
 - VoiceOver (IOS)
 - TalkBack, Brailleback (Android)
 
 ### WCAG 2.0
+
 - Links need to be explicit (e.g. if all are listed, which are which)
 - Don't use Java-applets and flash
 - Add labels to describe e.g. forms
 - No HTML errors (validate: http://validator.w3.org), e.g.:
-    * Use start and end tags.
-    * Unique ids
-    * Etc.
+  * Use start and end tags.
+  * Unique ids
+  * Etc.
 - Validate CSS
 - Set char set (`<meta charset="utf-8"/>`)
 - Set title
@@ -89,117 +105,141 @@ Examples:
 - Don't set maximum scale
 - If using iFrames always set title
 - In general don't use title tags (`<title>`)
-- Add noscript tag (`<noscript>`) if page needs script. This tag will only show if scripts are disabled.
+- Add noscript tag (`<noscript>`) if page needs script. This tag will
+  only show if scripts are disabled.
 - Modals:
-    * Lock user within modals (so not possible to tab out of open modal)
-    * Don't start modals randomly (should be opened with user action)
-- Use wai-aria attributes to show hidden information. E.g. `<button aria-expanded="true">Expand<button/>`.
-    * Use aria-live for fields that update automatically (off, polite, assertive).
-    * Don't use where not needed
-    * `aria-describedby` can be used if you have a text describing a field.
+  * Lock user within modals (so not possible to tab out of open modal)
+  * Don't start modals randomly (should be opened with user action)
+- Use wai-aria attributes to show hidden information. E.g. `<button
+  aria-expanded="true">Expand<button/>`.
+  * Use aria-live for fields that update automatically (off, polite,
+    assertive).
+  * Don't use where not needed
+  * `aria-describedby` can be used if you have a text describing a
+    field.
 - Make it possible to navigate with mouse, touch, and keyboard.
-    * Think about mouse over
-    * `tabindex` is a possibility if default order is bad, but may cause weird behaviour. So only use if needed.
+  * Think about mouse over
+  * `tabindex` is a possibility if default order is bad, but may cause
+    weird behaviour. So only use if needed.
 - Keep clickables big enough
 - Use structural tags as `nav` and `body`, and attributes as `role`
 - Let first tab be "go to main content"
 - Set links to current page as not clickable (e.g. `span`).
 - Keep consequent order on menu options.
-- Clearly show which clickable object is active while tabbing/mouse over.
+- Clearly show which clickable object is active while tabbing/mouse
+  over.
 - Only use timing (e.g. logout from bank) where needed
-- If automatically updated/logged out/etc, keep unsaved changes (e.g. forms)
+- If automatically updated/logged out/etc, keep unsaved changes (e.g.
+  forms)
 - Use tags correctly (e.g. links are `<a>`, buttons are `<button>`, etc)
 - Use `label` for label texts. Will also expand areas.
-    * E.g.: `<label for="text">Name</label><input id="text" required type="text" />`
-- Use `<fieldset>` and `<legend>`. 
+  * E.g.: `<label for="text">Name</label><input id="text" required
+    type="text" />`
+- Use `<fieldset>` and `<legend>`.
 - Validation of forms
-    * Show list with errors, and connect errors to correct fields. E.g. show error in `<label>` as a `<span>`
-    * Don't use only colors to show state. E.g. for errors, also add icon and text
-    * Don't submit actions before validated, and don't clear any fields.
+  * Show list with errors, and connect errors to correct fields. E.g.
+    show error in `<label>` as a `<span>`
+  * Don't use only colors to show state. E.g. for errors, also add icon
+    and text
+  * Don't submit actions before validated, and don't clear any fields.
 - Structure
-    * Header text should be in a `<h1>`, `<h2>`, etc.
-    * Text in `<p>` tags
-    * Cites in `<blockqoute>` tags
-    * Abbreviations in `<abbr>` tags (works for mouse over)
+  * Header text should be in a `<h1>`, `<h2>`, etc.
+  * Text in `<p>` tags
+  * Cites in `<blockqoute>` tags
+  * Abbreviations in `<abbr>` tags (works for mouse over)
 - Tables:
-    * use `<caption>`
-    * use `<th scope="<col|row>">`
-    * must show without scroll on smaller screen. Could e.g. show each row by itself.
+  * use `<caption>`
+  * use `<th scope="<col|row>">`
+  * must show without scroll on smaller screen. Could e.g. show each row
+    by itself.
 - Images:
-    * set `alt` text. Be explicit, e.g. "A person writes on a laptop. Photo."
-    * images just for design (e.g. a line separator) should be set as background image in CSS.
+  * set `alt` text. Be explicit, e.g. "A person writes on a laptop.
+    Photo."
+  * images just for design (e.g. a line separator) should be set as
+    background image in CSS.
 - Multimedia
-    * Background music should be easy to disable/automatically turn of in 3 sec
-    * Use description in links to files. What is it, file type, size, etc.
-    * Quality picker for at least two qualities
+  * Background music should be easy to disable/automatically turn of in
+    3 sec
+  * Use description in links to files. What is it, file type, size, etc.
+  * Quality picker for at least two qualities
 - Colors and texts (choosing color contrasts: Color Contrast Analyzer)
-    * Use clear contrast between text and background.
-    * Set text on images, not in.
+  * Use clear contrast between text and background.
+  * Set text on images, not in.
 - Pages
-    * Pages needs unique, relevant titles. Should be used in URL (slug)
-    * Add meta data
-    * Use lang attribute (E.g. `<html lang='en'>`). Could still have e.g. quotes with other language.
+  * Pages needs unique, relevant titles. Should be used in URL (slug)
+  * Add meta data
+  * Use lang attribute (E.g. `<html lang='en'>`). Could still have e.g.
+    quotes with other language.
 - Links
-    * Should be clear, also out of context.
-    * If opens in new window/is a document/redirect to other page, show this clearly
-    * Create a relevant and nice 404 page
-    * Show that actions are working with loading icon
+  * Should be clear, also out of context.
+  * If opens in new window/is a document/redirect to other page, show
+    this clearly
+  * Create a relevant and nice 404 page
+  * Show that actions are working with loading icon
 
 ### WCAG 2.1
-14 additional technical requirements 
-3 design requirements
+
+14 additional technical requirements 3 design requirements
 
 Also adds requirements to apps.
 
 Technical requirements:
 - 2.1.4 Character key shortcuts (A)
-    * Must be with ctrl, alt, shift
-    * Must be able to disable or personalize
-    * Can use attribute `accesskey` (e.g. `<a accesskey="t" href="">Something</a>`)
+  * Must be with ctrl, alt, shift
+  * Must be able to disable or personalize
+  * Can use attribute `accesskey` (e.g. `<a accesskey="t"
+    href="">Something</a>`)
 - 2.5.4 Label in Name (A)
-    * Name shown must also be accessible for help tools. Visual should mirror code.
-    * E.g. `<button>Close</button>`, not `<button aria-label="close">X</button>`
+  * Name shown must also be accessible for help tools. Visual should
+    mirror code.
+  * E.g. `<button>Close</button>`, not `<button
+    aria-label="close">X</button>`
 - 2.5.4 Pointer Cancellation (A)
-    * If one uses mouse down, one should be able to abort action.
-    * One should use standard behaviour (e.g. abort click by releasing mouse away from button).
+  * If one uses mouse down, one should be able to abort action.
+  * One should use standard behaviour (e.g. abort click by releasing
+    mouse away from button).
 - 2.5.7 Motion actuation (A)
-    * All that can be done with motion should be able to do with mouse (e.g. 360-degree movie).
-    * Can be exceptions e.g. leveler
+  * All that can be done with motion should be able to do with mouse
+    (e.g. 360-degree movie).
+  * Can be exceptions e.g. leveler
 - 1.3.4 Orientation (AA)
-    * Should work in both vertical/horizontal mode
+  * Should work in both vertical/horizontal mode
 - 1.3.5 Identify Input Purpose (AA)
-    * Makes it easier to use `autofill`.
-    * Use `autocomplete` attribute (e.g. `<input type="email" autocomplete="work email" name="E-post, jobb" />`).
+  * Makes it easier to use `autofill`.
+  * Use `autocomplete` attribute (e.g. `<input type="email"
+    autocomplete="work email" name="E-post, jobb" />`).
 - 1.4.10 Reflow (AA)
-    * No scroll for 320px width, or 256px height
-    * Should not loose any information on smaller screen.
+  * No scroll for 320px width, or 256px height
+  * Should not loose any information on smaller screen.
 - 1.4.12 Text Spacing (AA)
-    * Should be able to use tools to decide text spacing (e.g. stylish (chrome app))
-    * Should not hide any information (e.g. for overflow=hidden)
+  * Should be able to use tools to decide text spacing (e.g. stylish
+    (chrome app))
+  * Should not hide any information (e.g. for overflow=hidden)
 - 1.4.13 Content on Hover or Focus (AA)
-    * Mainly meant for sub menus and programmatically created tooltips (not `title`).
-    * Mouse must be able to move to expanded area
-    * Expanded area must not disappear by itself
-    * Must be closable with ESC
-    * Does not include `Modal`
+  * Mainly meant for sub menus and programmatically created tooltips
+    (not `title`).
+  * Mouse must be able to move to expanded area
+  * Expanded area must not disappear by itself
+  * Must be closable with ESC
+  * Does not include `Modal`
 - 4.1.3 Status Messages (AA)
-    * Use `aria-live`
-    * If reload of page (some request done)
-    * If live validation of form
+  * Use `aria-live`
+  * If reload of page (some request done)
+  * If live validation of form
 - 2.5.5 Target Size (AAA)
-    * Clickable objects must be minimum 44x44 px.
-    * Not anchor links
+  * Clickable objects must be minimum 44x44 px.
+  * Not anchor links
 - 1.3.6 Identify Purpose (AAA)
-    * Set purpose of fields, functions, etc.
-    * Could be done with:
-        - meta data (e.g. `itemtype`)
-        - text (e.g. "Phone number 12345678")
+  * Set purpose of fields, functions, etc.
+  * Could be done with:
+    - meta data (e.g. `itemtype`)
+    - text (e.g. "Phone number 12345678")
 - 2.5.6 Concurrent Input Mechanisms (AAA)
-    * Should work with touch, mouse, keyboard
+  * Should work with touch, mouse, keyboard
 - 2.2.6 Timeouts (AAA)
-    * Save data for 20 hours (auto save)
-    * Warn user about timeouts
-    * Does not count if computer turns off/web browser closes 
+  * Save data for 20 hours (auto save)
+  * Warn user about timeouts
+  * Does not count if computer turns off/web browser closes
 
 Design requirements:
 - Contrast
