@@ -1,7 +1,4 @@
-# Notes
+# Summary
 
-Just some random stuff..
-
-### Table of contents
+* [Introduction](README.md)
 * [Content Accessibility ("Universell utforming")](src/notes/content-accessibility.md)
-
