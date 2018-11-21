@@ -47,3 +47,95 @@ in the same cluster.
 
 > In google cloud they manage the master for you. You don't have to pay for this
 > node.
+
+#### Configuration
+
+Kubernetes is configured using YAML files.
+
+> ReplicaSet: How many replicas of the pod should be running.
+
+## Big Data and Machine Learning in the cloud
+
+### Data pipelines
+
+* Cloud storage (batch storage)
+  Raw logs, database extracts, etc.
+* Cloud Pub/Sub (stream)
+  Events, metrics, etc.
+
+#### Cloud DataFlow
+
+You can have a unified data processing from both of these with Cloud Dataflow,
+and store/retrieve the data with BigQuery. DataFlow can be used for ETL, Analysis,
+orchestration, etc.
+
+#### Cloud Dataproc
+
+* Managed Hadoop MapReduce, Spark, Pig, and Hive service
+* Create clusters in less tha 90sec avg.
+* Scale clusters
+
+#### BigQuery
+
+Data Warehouse that supports industry standards (SQL, JDBC, ODBC). Fully managed
+and serverless. Only pays for storage used. Hybrid of relational and dynamic
+database. Every column is saved as a file. This allows horizontal expansion (??).
+
+It's very fast when executing advanced queries, and also caches the
+response. This means you only pay for each query once if data don't change.
+
+Include lot's of public datasets.
+
+BigQuery ML is a product that can give you a collection of data based on other
+data. This can be used to e.g. recomendation.
+
+Demo:
+* GitHub: queryItSmart
+* YouTube: An overview of Cloud IoT Core (Google I/O 18)
+
+### ML
+
+Cloud Datalab
+
+* Notebook-interface
+* Scalable
+
+Machine Learning APIs
+
+* Build your own models (TensoFlow, Cloud ML Engine)
+* in-between: Cloud AutoML
+* APIs: Vision API, Speech API, Translation API, Natural Language API, ...
+
+#### AutoML
+
+You have some things, label them, train model, evaluate.
+
+#### Vision API
+
+* Object recognition
+* Facial sentiment & logos
+* Extract text (OCR)
+  Example: Giro app (classify invoices)
+* Detect inappropiate content
+
+#### Speech API
+
+* Speech recognition
+* Word hints
+* Noise robustness
+* Real-time results
+* Over 100 languages
+
+#### Translation API
+
+* Text translation
+* Auto language deteection
+* Continoues updates
+* Premium edition (beta)
+
+#### Natural Language API
+
+* Entity Recognition
+* Sentiment Analysis
+* Multi-language Support
+* Syntax Analysis
