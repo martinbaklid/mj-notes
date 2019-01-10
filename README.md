@@ -22,3 +22,6 @@
     * [Branching](src/notes/git.md#branching)
     * [Amending to the last commit](src/notes/git.md#amending-to-the-last-commit)
 * [Hiking | Check list](src/notes/hiking-check-list.md)
+* [Hvordan starte et ML-prosjekt](src/notes/how-to-create-a-ml-project.md)
+  * [Prosess](src/notes/how-to-create-a-ml-project.md#prosess)
+  * [Validering](src/notes/how-to-create-a-ml-project.md#validering)
