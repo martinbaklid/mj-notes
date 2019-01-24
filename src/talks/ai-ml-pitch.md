@@ -38,6 +38,7 @@ Det vi har valgt å fokusere på i første omgang er:
 ).
 * Se på hvordan vi kan tilegne oss prosjekter.
 * Utforske hvordan de store platformene kan benyttes i denne typen prosjekter.
+* Sertifiseringer
 * Jobbe med realistiske, "real world" oppgaver fra [Kaggle.com](https://www.kaggle.com/).
 
 Kaggle.com er en nettside hvor bedrifter, veldedigheter, o.l. kan poste oppgaver fra
